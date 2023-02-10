@@ -28,11 +28,11 @@ def main():
             if check_winner(move):
                 print(f"Player {players[i % 2]} won on move {i + 1} with {move}")
 
-        flip_board()
+            flip_board()
 
     def check_winner(move: Move):
         # checking horizontal
-        current_index = move.index
+        current_index = move
         for row in range(6):
             for col in range(4):
                 if board.board[row][col] == current_index and \
